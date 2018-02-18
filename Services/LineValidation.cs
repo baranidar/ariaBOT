@@ -33,7 +33,7 @@ namespace ariabot.Middleware
             var content = new StreamReader(context.Request.Body).ReadToEnd();
             if (string.IsNullOrEmpty(lineSignatureHeader.FirstOrDefault()) || !VerifySignature(channelSecret, lineSignatureHeader.First(), content))
             {
-                throw new Exception("Signature validation faild.");
+               throw new Exception("Signature validation faild.");
             }
             context.Request.Body.Position = 0;
             await next(context);

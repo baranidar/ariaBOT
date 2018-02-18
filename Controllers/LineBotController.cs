@@ -18,7 +18,12 @@ namespace ariabot.Controllers
         public LineBotController(IOptions<AppSettings> options)
         {
             appsettings = options.Value;
+        #if DEBUG
+            lineMessagingClient = new LineMessagingClient(appsettings.LineSettings.ChannelAccessToken,
+                "http://localhost:8080");
+         #else
             lineMessagingClient = new LineMessagingClient(appsettings.LineSettings.ChannelAccessToken);
+        #endif
         }
 
         /// <summary>

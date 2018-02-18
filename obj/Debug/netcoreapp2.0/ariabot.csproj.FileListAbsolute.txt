@@ -1,0 +1,11 @@
+C:\Users\Shakthi\Documents\Bots\ariabot\bin\Debug\netcoreapp2.0\ariabot.deps.json
+C:\Users\Shakthi\Documents\Bots\ariabot\bin\Debug\netcoreapp2.0\ariabot.runtimeconfig.json
+C:\Users\Shakthi\Documents\Bots\ariabot\bin\Debug\netcoreapp2.0\ariabot.runtimeconfig.dev.json
+C:\Users\Shakthi\Documents\Bots\ariabot\bin\Debug\netcoreapp2.0\ariabot.dll
+C:\Users\Shakthi\Documents\Bots\ariabot\bin\Debug\netcoreapp2.0\ariabot.pdb
+C:\Users\Shakthi\Documents\Bots\ariabot\obj\Debug\netcoreapp2.0\ariabot.csprojResolveAssemblyReference.cache
+C:\Users\Shakthi\Documents\Bots\ariabot\obj\Debug\netcoreapp2.0\ariabot.csproj.CoreCompileInputs.cache
+C:\Users\Shakthi\Documents\Bots\ariabot\obj\Debug\netcoreapp2.0\ariabot.AssemblyInfoInputs.cache
+C:\Users\Shakthi\Documents\Bots\ariabot\obj\Debug\netcoreapp2.0\ariabot.AssemblyInfo.cs
+C:\Users\Shakthi\Documents\Bots\ariabot\obj\Debug\netcoreapp2.0\ariabot.dll
+C:\Users\Shakthi\Documents\Bots\ariabot\obj\Debug\netcoreapp2.0\ariabot.pdb
