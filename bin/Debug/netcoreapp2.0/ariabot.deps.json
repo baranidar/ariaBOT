@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "413170facba66196a97260b49520eed63d13cd60"
+    "signature": "74dab9f60d11ca47b86c1d900c71b41244e38f00"
   },
   "compilationOptions": {
     "defines": [
@@ -25,6 +25,7 @@
         "dependencies": {
           "Line.Messaging": "1.2.1",
           "Microsoft.AspNetCore.All": "2.0.3",
+          "Microsoft.Cognitive.LUIS": "2.0.2",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
           "System.Configuration.ConfigurationManager": "4.4.1"
@@ -1499,6 +1500,17 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.Cognitive.LUIS/2.0.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Cognitive.LUIS.dll": {}
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Cognitive.LUIS.dll": {}
         }
       },
       "Microsoft.CSharp/4.4.0": {},
@@ -4925,6 +4937,13 @@
       "sha512": "sha512-/Y9zLXlvWVvGxLyNWvLrSRRZ6c1F3L2yVwhUcmGd9un7u/TJguOyY2BEOD10uA/KBDKbA4pmnWnJFq+2n5IYPg==",
       "path": "microsoft.codeanalysis.workspaces.common/2.3.1",
       "hashPath": "microsoft.codeanalysis.workspaces.common.2.3.1.nupkg.sha512"
+    },
+    "Microsoft.Cognitive.LUIS/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N3YDPIwmQvPrLRvf9AjQHLUALzGKKMzamjC5WSQEmHpASdnIlbt+8sNGSx7Rl5CPtbCeUY+29TynAFoycCpftQ==",
+      "path": "microsoft.cognitive.luis/2.0.2",
+      "hashPath": "microsoft.cognitive.luis.2.0.2.nupkg.sha512"
     },
     "Microsoft.CSharp/4.4.0": {
       "type": "package",

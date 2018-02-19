@@ -1576,6 +1576,18 @@
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
+      "Microsoft.Cognitive.LUIS/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Cognitive.LUIS.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wpa81/Microsoft.Cognitive.LUIS.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.4.0": {
         "type": "package",
         "compile": {
@@ -6171,6 +6183,16 @@
         "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.xml",
         "microsoft.codeanalysis.workspaces.common.2.3.1.nupkg.sha512",
         "microsoft.codeanalysis.workspaces.common.nuspec"
+      ]
+    },
+    "Microsoft.Cognitive.LUIS/2.0.2": {
+      "sha512": "N3YDPIwmQvPrLRvf9AjQHLUALzGKKMzamjC5WSQEmHpASdnIlbt+8sNGSx7Rl5CPtbCeUY+29TynAFoycCpftQ==",
+      "type": "package",
+      "path": "microsoft.cognitive.luis/2.0.2",
+      "files": [
+        "lib/portable45-net45+win8+wpa81/Microsoft.Cognitive.LUIS.dll",
+        "microsoft.cognitive.luis.2.0.2.nupkg.sha512",
+        "microsoft.cognitive.luis.nuspec"
       ]
     },
     "Microsoft.CSharp/4.4.0": {
@@ -13204,6 +13226,7 @@
     ".NETCoreApp,Version=v2.0": [
       "Line.Messaging >= 1.2.1",
       "Microsoft.AspNetCore.All >= 2.0.3",
+      "Microsoft.Cognitive.LUIS >= 2.0.2",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0",
       "System.Configuration.ConfigurationManager >= 4.4.1"
@@ -13215,6 +13238,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\Shakthi\\Documents\\Bots\\ariabot\\ariabot.csproj",
       "projectName": "ariabot",
@@ -13258,6 +13284,10 @@
             "target": "Package",
             "version": "[2.0.3, )"
           },
+          "Microsoft.Cognitive.LUIS": {
+            "target": "Package",
+            "version": "[2.0.2, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.0.0, )",
@@ -13279,5 +13309,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Cognitive.LUIS 2.0.2' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Cognitive.LUIS",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }
