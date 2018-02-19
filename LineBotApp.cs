@@ -66,16 +66,18 @@ namespace ariabot
                 // If menu is specified.
                 if (luisResult.Entities.ContainsKey("Recipes"))
                 {
-                    var name = luisResult.Entities["Recipes"].First().Value;
-                    var order = new Review() { Name = name, SourceId = userId };
-                    await reviewState.UpdateAsync(order);
+                    //var name = luisResult.Entities["Recipes"].First().Value;
+                    //var order = new Review() { Name = name, SourceId = userId };
+                    //await reviewState.UpdateAsync(order);
 
-                    replyMessage = new TemplateMessage("Review", new ButtonsTemplate(
-                        title: "Review",
-                        text: $"Thanks for the review.",
-                        actions: new List<ITemplateAction>(){
-                            new UriTemplateAction("Review","line://nv/location")
-                            }));
+                    //replyMessage = new TemplateMessage("Review", new ButtonsTemplate(
+                    //    title: "Review",
+                    //    text: $"Thanks for the review.",
+                    //    actions: new List<ITemplateAction>(){
+                    //        new UriTemplateAction("Review","line://nv/location")
+                    //        }));
+                    replyMessage = new TextMessage($"You Recipe is {luisResult.Entities["Recipes"].First().Value}.");
+
                 }
                 else
                 {
