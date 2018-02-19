@@ -66,7 +66,7 @@ namespace ariabot
                 // If menu is specified.
                 if (luisResult.Entities.ContainsKey("Recipes"))
                 {
-                    var name = luisResult.Entities["Name"].First().Value;
+                    var name = luisResult.Entities["Recipes"].First().Value;
                     var order = new Review() { Name = name, SourceId = userId };
                     await reviewState.UpdateAsync(order);
 
